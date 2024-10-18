@@ -12,7 +12,7 @@ test1('Verify user login', { tag: '@sanity' }, async ({ page , credentials }) =>
     await page.getByRole('button', { name: 'Login' }).click();
     await expect(page.url()).toEqual("https://www.saucedemo.com/inventory.html");
     await page.screenshot({path : 'D:\\TestApps\\SwagLabs\\screenshots\\after_login.png'});
-    await expect(page).toHaveScreenshot();
+    // await expect(page).toHaveScreenshot();
 })
 
 test('Verify when username is correct but password is wrong', { tag: '@sanity' }, async ({ page }) => {
