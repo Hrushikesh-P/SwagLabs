@@ -2,15 +2,16 @@
 
 ## Project Overview
 
-This is a test automation framework designed specifically for **Swag Labs**, utilizing Playwright and TypeScript to provide comprehensive end-to-end testing solutions for the Swag Labs e-commerce platform. By leveraging this framework, teams can quickly identify and resolve issues, enhancing the overall quality of the application.
+This is a test automation framework designed specifically for **Swag Labs**, utilizing Playwright and TypeScript to provide comprehensive end-to-end testing solutions for the Swag Labs e-commerce platform.
 
 ## Technologies Used
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Playwright-333333?logo=playwright&logoColor=white" alt="Playwright" />
   <img src="https://img.shields.io/badge/TypeScript-007acc?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Playwright-333333?logo=playwright&logoColor=white" alt="Playwright" />
   <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white" alt="Jenkins" />
   <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Allure-FF5A28?logo=allure&logoColor=white" alt="Allure" />
 </p>
 
 ## Key Contributions
@@ -28,7 +29,7 @@ This is a test automation framework designed specifically for **Swag Labs**, uti
 - Set up Jenkins jobs to run tests and generate reports, facilitating continuous feedback to the development team.
 
 ### 4. **Reporting and Insights**
-- Developed detailed test reports that provide actionable insights into test results and execution times, assisting stakeholders in making informed decisions.
+- Developed detailed test reports using **Allure**, providing actionable insights into test results and execution times, assisting stakeholders in making informed decisions.
 - Employed visualization tools to track test performance trends over time, contributing to improved testing strategies.
 
 ## Skills Demonstrated
@@ -36,4 +37,12 @@ This is a test automation framework designed specifically for **Swag Labs**, uti
 - Proficient in **TypeScript**, enhancing code quality and developer experience.
 - Strong understanding of **Playwright** for automated testing, including features like parallel execution and headless browsing.
 - Experience with **CI/CD** practices, particularly with **Jenkins**, to streamline development workflows.
+- Familiarity with **Allure** for test reporting, improving visibility and traceability of test results.
 - Ability to create comprehensive documentation, improving project maintainability and onboarding for new team members.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (v12 or later)
+- [Playwright](https://playwright.dev/) (v1.0 or later)
+- [Jenkins](https://www.jenkins.io/) (for CI/CD integration)
+- [Allure](https://docs.qameta.io/allure/) (for reporting)
