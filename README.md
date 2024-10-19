@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is a test automation framework designed specifically for **Swag Labs**, utilizing Playwright and TypeScript to provide comprehensive end-to-end testing solutions for the Swag Labs e-commerce platform.
+This is a test automation framework designed specifically for **[Swag Labs](https://www.saucedemo.com)**, utilizing Playwright and TypeScript to provide comprehensive end-to-end testing solutions for the Swag Labs e-commerce platform.
 
 ## Technologies Used
 
