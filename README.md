@@ -4,6 +4,15 @@
 
 This is a test automation framework designed specifically for **Swag Labs**, utilizing Playwright and TypeScript to provide comprehensive end-to-end testing solutions for the Swag Labs e-commerce platform. By leveraging this framework, teams can quickly identify and resolve issues, enhancing the overall quality of the application.
 
+## Technologies Used
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Playwright-333333?logo=playwright&logoColor=white" alt="Playwright" />
+  <img src="https://img.shields.io/badge/TypeScript-007acc?logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Jenkins-D24939?logo=jenkins&logoColor=white" alt="Jenkins" />
+  <img src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white" alt="Node.js" />
+</p>
+
 ## Key Contributions
 
 ### 1. **Framework Development**
