@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
 import path from 'path';
-
+import os from "node:os";
 // Read from ".env" file.
 dotenv.config({ path: path.resolve(__dirname, '.env') });
 
@@ -27,7 +27,36 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [
+    [
+      "allure-playwright",
+      {
+        detail: true,
+        resultsDir: "my-allure-results",
+        suiteTitle: false,
+        links: {
+          link: {
+            urlTemplate: "https://github.com/allure-framework/allure-js/blob/main/%s",
+          },
+          issue: {
+            urlTemplate: "https://github.com/allure-framework/allure-js/issues/%s",
+            nameTemplate: "ISSUE-%s",
+          },
+        },
+        environmentInfo: {
+          OS: os.platform(),
+          Architecture: os.arch(),
+          NodeVersion: process.version,
+        },
+        categories: [
+          {
+            name: "Missing file errors",
+            messageRegex: /^ENOENT: no such file or directory/,
+          },
+        ],
+      },
+    ],
+  ],  
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
