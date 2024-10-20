@@ -42,6 +42,10 @@ test1('Click on checkout button', { tag: '@sanity' }, async ({ basic_login, add_
 
 })
 
+test1('Navigate to checkout page ', { tag: '@sanity' }, async ({ checkout_page_navigation }) => {
+    await expect(checkout_page_navigation.url()).toEqual("https://www.saucedemo.com/checkout-step-one.html");
+})
+
 
 
 
