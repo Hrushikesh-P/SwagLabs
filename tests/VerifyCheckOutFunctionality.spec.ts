@@ -10,14 +10,13 @@ test1.beforeEach('Fill the form & continue', async ({ page,checkout_page_navigat
     await checkout_page_navigation.getByRole('button', { name: 'Continue' }).click();
 })
 
-test1('Fill details', { tag: '@sanity' }, async ({ checkout_page_navigation }) => {
+test1('Verify step 2 of checkout', { tag: '@sanity' }, async ({ checkout_page_navigation }) => {
     await expect(checkout_page_navigation.url()).toEqual("https://www.saucedemo.com/checkout-step-two.html");
 })
 
 
 test1('Finish the Purchase', { tag: '@sanity' }, async ({ checkout_page_navigation }) => {
     await checkout_page_navigation.getByRole('button', { name: 'Finish' }).click();
-
     await expect(checkout_page_navigation.url()).toEqual("https://www.saucedemo.com/checkout-complete.html");
     await expect(await checkout_page_navigation.getByRole("heading", { level: 2 }).innerText()).toEqual("Thank you for your order!");
 
