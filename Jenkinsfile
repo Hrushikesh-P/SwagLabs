@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh '''
                 # Set a temporary npm cache directory
-                export NPM_CONFIG_CACHE=/workspace/.npm
+                export NPM_CONFIG_CACHE=/app/.npm
                 npm ci
                 npx playwright test
                 '''
